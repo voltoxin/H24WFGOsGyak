@@ -1,3 +1,3 @@
-#Kánya Alexander Milán
-#Miskolci Egyetem - Programtervező Informatikus Hallgató
-#Operációs Rendszerek Gyakorlat
+Kánya Alexander Milán
+Miskolci Egyetem - Programtervező Informatikus Hallgató
+Operációs Rendszerek Gyakorlat

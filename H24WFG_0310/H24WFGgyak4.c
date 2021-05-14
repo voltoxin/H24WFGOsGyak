@@ -10,14 +10,18 @@ int main()
     
     if((pid = fork()) < 0)
     	perror("fork error");
+    
     else if (pid == 0)    
         {
-            if(execl("./child", "child", (char *)NULL) < 0)
-            	perror("execl error");
+        if(execlp("pwd", "child", (char *)NULL) < 0)
+        	perror("execl error");
         }
-    if (waitpid(pid, NULL, 0) < 0)
-        perror("wait error");
+    
+    else
+    	{
+    	wait(0);
+        printf("A gyerek sikeresen lefutott.\n");
+        }
         
-
     return 0;
 }
